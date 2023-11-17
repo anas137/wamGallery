@@ -57,7 +57,7 @@ async function init() {
         //divPlugins.append(title);
 	
 	   divPlugins.append(link);
-		divPlugins.append(desc);
+		divPlugins.append
         divPlugins.append(img);
     }
   }
