@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple host that loads a non bundled plugin</title>
+    <script type="module" src="./wam-host/wamHost.js"></script>
+    <script type="module" src="./wam-plugin/wamPlugin.js"></script>
+  </head>
+
+  <body>
+    <wam-host>
+      <wam-plugin
+        id="wamRemote"
+        src="https://www.webaudiomodules.com/community/plugins/wimmics/blipper/index.js"
+      ></wam-plugin>
+
+      <!--
+      <wam-plugin
+        id="wamRemote2"
+        src="https://www.webaudiomodules.com/community/plugins/burns-audio/distortion/index.js"
+      ></wam-plugin>
+    -->
+      <!-- <wam-plugin src="../../packages/faustPingPongDelay/plugin/index.js"></wam-plugin> -->
+    </wam-host>
+
+    <script>
+        // recuperation du parametre http url
+        const urlParams = new URLSearchParams(window.location.search);
+        const url = urlParams.get('url');
+
+        // on change la valeur de l'attribut src de l'élément avec id wamRemote
+        const wamPlugin = document.querySelector('#wamRemote');
+        wamPlugin.setAttribute('src', url);
+
+    </script>
+  </body>
+</html>

@@ -57,6 +57,14 @@ async function init() {
         //divPlugins.append(title);
 	
 	   divPlugins.append(link);
+
+	   // create a link element to display "testLoadWam.html" page with the url of the plugin as http parameter
+	   let link2 = document.createElement("a");
+	   link2.href = `testLoadWam.html?url=${BASE_URL_SERVER}/plugins/${wam.path}`; 
+	   link2.target = "_self";
+	   link2.innerHTML = `${wam.name} by ${wam.vendor}`;
+	   divPlugins.append(link2);
+
 		divPlugins.append
         divPlugins.append(img);
     }

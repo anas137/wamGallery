@@ -1,0 +1,17 @@
+{
+  "name": "wam-plugin",
+  "version": "1.0.0",
+  "description": "A wam-plugin package for wams plugins",
+  "main": "wamPlugin.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wam-plugin"
+  ],
+  "author": "Sylcantor",
+  "license": "ISC"
+}

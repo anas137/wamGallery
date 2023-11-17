@@ -1,0 +1,17 @@
+{
+  "name": "wam-host",
+  "version": "1.0.1",
+  "description": "A wam-host package for host plugins",
+  "main": "wamHost.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wam-host"
+  ],
+  "author": "Sylcantor",
+  "license": "ISC"
+}
