@@ -4,16 +4,58 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Galerie d'effets pour Guitaristes</title>
-        <script type="module" src="original.js"></script>
-        <link rel="stylesheet" href="style.css">
+        <script src="original.js"></script>
+        <link rel="stylesheet" href="style.css">    
+        <link rel="icon" href="https://iconspng.com/uploads/electric-guitar/electric-guitar.png" type="image/png">
 
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body id="body">
+        <h1><a href="http://localhost:3000/">The Guitar Gallery  </a></h1>
+        <button id="sortByName">Sort by Name</button>
+        <button id="sortByVendor">Sort by Vendor</button>
+        <label for="select">Author:</label>
+        <select id="select">
+                <option value="all">All</option>
+                <option value="wimmics">Wimmics</option>
+                <option value="sequencer party">SequencerParty</option>
+        </select>
+        <label for="selectC">Category:</label>
+        <select id="selectC">
+                <option value="all">All</option>
+                <option value="reverb">Reverb</option>
+                <option value="distortion">Distortion</option>
+                <option value="utility">Utility</option>
+                <option value="modulation">Modulation</option>
+                <option value="midi">MIDI</option>
+                <option value="generator">Generator</option>
+                <option value="instrument">Instrument</option>
+                <option value="synthesizer">Synthesizer</option>
+                <option value="delay">Delay</option>
+                <option value="equalizer & filter">Equalizer</option>
+                <option value="pitch">Pitch</option>
+                <option value="amp simulator">Amp Simulator</option>
+                <option value="visualization">Visualization</option>
+                
+        </select>
+        <button id="resetFilters">Reset Filters</button>
+        <br>
+        <div id="searchContainer">
+                <i class="fa fa-search" id="searchIcon"></i>         
+                <input type="text" id="searchBar" placeholder="Search">
+                <button id="voiceSearchButton" onclick="recognizeSpeech()">
+                    <i class="fa fa-microphone"></i>
+                </button>
+            </div>
+            
+            
+            <br>
+<span id="pluginCount"></span> Plugins found
+        <div id="listeWams">
+        </div>
+        <button id="loadMore">Load More</button><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<body>
-        
-
-        <h1>WAM</h1>
-  <div id="listeWams">
-  </div>
 </body>
+</html>
+
+
