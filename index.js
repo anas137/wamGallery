@@ -15,12 +15,12 @@ app.use(cors(corsOptions));
 
 // declare single route for static files located in public folder
 app.use(express.static('public'));
-
+/*
 const data = [
     // generate some user objects
     { id: 1, name: 'John Doe'},
     { id: 1, name: 'Michel'}
-]
+]*/
 // declare route for index.html
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
@@ -58,4 +58,3 @@ app.post('/api/users', async (req, res) => {
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!');
 });
-
