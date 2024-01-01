@@ -1,0 +1,156 @@
+/* Reset some basic elements */
+body, h1, button, select, input {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and overall layout */
+body {
+    background-color: #9c3636;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+#body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+/* Header styles */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Button styles */
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form elements */
+select, input[type="text"] {
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Layout for filters and search */
+label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+
+
+/* Plugin list and items */
+#listeWams {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.plugin-item {
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#searchContainer {
+    display: flex; /* Use flexbox for easy alignment and positioning */
+    align-items: center; /* Aligns children vertically in the middle */
+    position: relative; /* Establishes a positioning context */
+    width: 600px; /* Size container */
+    margin: 0 auto;
+}
+
+#searchBar {
+    flex-grow: 1; /* Allows the search bar to take up the remaining space */
+    padding: 10px 40px 10px 60px; /* Increase left padding to accommodate the search icon */
+    /* Add other styles like border, etc., as needed */
+    border: 1px solid #ccc; /* Example border, adjust as needed */
+}
+
+#searchIcon {
+    position: absolute;
+    left: 15px; /* Adjust as needed, ensure it's within the left padding of the input */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Ensures exact vertical centering */
+    font-size: 20px; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    z-index: 10; /* Ensures the icon is above the input field */
+}
+
+
+#voiceSearchButton {
+    position: absolute; /* Positions the button relative to the container */
+    right: 0; /* Aligns the button to the right */
+    top: 0; /* Aligns the button to the top */
+    border: none; /* Removes border */
+    background: transparent; /* Makes the button background transparent */
+    padding: 17px; /* Adds some space around the icon */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.fa-microphone {
+    font-size: 20px;
+    color: #333; /* Adjust the color as needed */
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    button, select, input[type="text"], #searchContainer {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #voiceSearchButton {
+        padding: 10px;
+        position: absolute; /* Positions the button relative to the container */
+    left:340; /* Aligns the button to the right */
+        }
+}
+
+
+
+
