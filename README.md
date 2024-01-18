@@ -6,3 +6,6 @@ wamGallery is a web application for showcasing and interacting with Web Audio Mo
 - Browse a collection of Web Audio Modules.
 - Interact with audio plugins in real-time.
 - Integrate with various audio sources and outputs.
+
+# To launch server
+Go on index.js ->terminal -> node index.js
